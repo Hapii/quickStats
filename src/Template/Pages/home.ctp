@@ -1,10 +1,10 @@
 
-<?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js') ?>
-
-<?= $this->Html->script('bootstrap.min.js') ?>
 <?= $this->Html->css('bootstrap.min.css') ?>
 <?= $this->Html->css('StyleSheet1.css') ?>
-
+<?= $this->Html->script('jquery-2.1.4.min.js') ?>
+<?= $this->Html->script('bootstrap.min.js') ?>
+<?= $this->Html->script('angular.min.js') ?>
+<?= $this->Html->script('controllers.js') ?>
 
     <title>Professional Football Quick Stats</title>
     <script type="text/javascript">
@@ -56,23 +56,18 @@
                     <div class="panel panel-default">
                         <div class="tabs">
                             <div class="tab-content">
-                                <div id="tab1" class="tab panel-body active">
+                                <div id="tab1" class="tab panel-body active" ng-controller="RankingsController">
                                     <div class="dropdown">
                                         <button data-toggle="dropdown" aria-haspopup="true" class="btn btn-default dropdown-toggle" aria-expanded="false">
                                         Division
                                             <span class="caret"></span>
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                            <li><a href="#">All</a></li>
-                                            <li><a href="#">NFC South</a></li>
-                                            <li><a href="#">NFC North</a></li>
-                                            <li><a href="#">NFC East</a></li>
-                                            <li><a href="#">NFC West</a></li>
-                                            <li><a href="#">AFC South</a></li>
-                                            <li><a href="#">AFC North</a></li>
-                                            <li><a href="#">AFC East</a></li>
-                                            <li><a href="#">AFC West</a></li>
-                                        </ul>
+                                        <div ng-repeat="division in divisions">
+                                            {{division}}
+                                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                <li><a href="#">{{division}}</a></li>
+                                            </ul>
+                                        </div>
                                 </div>
                                 <!--<button class="btn btn-default pull-right" id="RankingsFind">Find
                                 </button>-->
