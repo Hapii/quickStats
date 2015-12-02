@@ -61,7 +61,7 @@
                                 <div ng-controller="DropdownCtrl">
                                     <div class="dropdown" uib-dropdown is-open="status.isopen">
                                         <button class="btn btn-default" uib-dropdown-toggle ng-disabled="disabled">
-                                        Button dropdown <span class="caret"></span>
+                                        Divisions <span class="caret"></span>
                                         </button>
                                         <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
                                             <li role="menuitem" ng-repeat="division in divisions"><a href="#">{{division}}</a></li>
