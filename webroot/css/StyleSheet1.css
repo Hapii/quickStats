@@ -1,0 +1,86 @@
+body {
+    padding-top:65px;
+}
+.navbar-fixed-top{
+    background-color: rgb(0,0,0);
+}
+.navbar-brand{
+    background-color: #212121;
+}
+.navbar-brand:hover{
+    background-color: #212121;
+}
+.tablinks li a{
+    background-color: #424242;
+}
+.navbar{
+    background-color: #424242;
+}
+
+h2{
+    text-align:center;
+}
+.score{
+    position: relative;
+    margin:0 auto;
+}
+.teamVs div span{
+    font-weight: bold;
+}
+
+
+p.orange{
+    color:darkorange;
+    font:900;
+    font-size:x-large;
+    text-align:center;
+}
+h1{
+    margin-top: 0px;
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+ 
+    .tab-links{
+        margin-bottom: 15px;
+    }
+ 
+        .tab-links a {
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight: bold;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
